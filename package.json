@@ -1,0 +1,23 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "site de notícias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunojus/discovering-nodejs.git"
+  },
+  "author": "Bruno Justino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunojus/discovering-nodejs/issues"
+  },
+  "homepage": "https://github.com/brunojus/discovering-nodejs#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  }
+}
