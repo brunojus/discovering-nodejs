@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 	
-module.exports = function(){
+var connMysql = function(){
 	
 	return mysql.createConnection({
 		
@@ -10,4 +10,8 @@ module.exports = function(){
 		database:'portal_noticias'
 
 	});
+}
+
+module.exports = function(){
+	return connMysql;
 }
