@@ -9,9 +9,9 @@ module.exports = function(app){
 
 
 		var connection = app.config.dbConnection();
-		var Noticias = app.app.models.Noticias;
+		var Noticias = new app.app.models.Noticias(connection);
 
-		Noticias.salvarNoticia(noticia,connection,function(error,result) {
+		Noticias.salvarNoticia(noticia, function(error,result) {
 				res.redirect('/noticias');
 
 		});	
